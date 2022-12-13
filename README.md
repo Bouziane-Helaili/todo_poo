@@ -16,4 +16,4 @@
 3. git push -u origin main
 
 # Etapes projet
-1. travaille essentiellement sur les modèles Task et User
+1. travail essentiellement sur les modèles Task et User
