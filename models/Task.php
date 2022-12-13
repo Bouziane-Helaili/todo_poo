@@ -118,7 +118,7 @@ class Task  extends Model
     {
         $stmt = $this->pdo->prepare("SELECT * FROM task WHERE id = :id_user ");
         $stmt->bindParam(':id_user', $id_user);
-        // $stmt->setFetchMode(PDO::FETCH_CLASS , __CLASS__); A tester !!!
+        $stmt->setFetchMode(PDO::FETCH_CLASS, __CLASS__);
         $stmt->execute();
         return $stmt->fetchAll();
     }
